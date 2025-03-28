@@ -10,6 +10,27 @@
     <h1>Welcome to My Custom CDN</h1>
     <button onclick="myCDN.toggleDarkMode()">Toggle Dark Mode</button>
     <button onclick="myCDN.showToast('Hello from CDN!', 'success')">Show Toast</button>
+    <button onclick="myCDN.copyToClipboard('Hello, World!')">Copy Text</button>
+<button onclick="myCDN.randomBackground()">Change Background</button>
+<button onclick="myCDN.scrollToTop()">Scroll to Top</button>
+<button onclick="myCDN.showLoader()">Show Loader</button>
+
+<h1 id="animatedText"></h1>
+<button onclick="myCDNAnimations.typeText(document.getElementById('animatedText'), 'Hello from Ravi CDN!')">
+    Start Typing Effect
+</button>
+<p id="fadeInPara" style="opacity: 0;">This text will fade in</p>
+<button onclick="myCDNAnimations.fadeInElement(document.getElementById('fadeInPara'))">
+    Show Fade-In Effect
+</button>
+
+<button onclick="myCDNAPI.fetchData('https://jsonplaceholder.typicode.com/todos/1').then(data => console.log(data))">
+    Fetch Data
+</button>
+<button class="ripple-btn" onclick="myCDN.addRippleEffect(event)">Click Me</button>
+
+
+
     <script src="js/utils.js"></script>
 </body>
 </html>
