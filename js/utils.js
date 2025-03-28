@@ -46,22 +46,6 @@ function showLoader(duration = 2000) {
 }
 
 
-function addRippleEffect(event) {
-    let btn = event.currentTarget;
-    let circle = document.createElement("span");
-    let size = Math.max(btn.offsetWidth, btn.offsetHeight);
-    let x = event.clientX - btn.offsetLeft - size / 2;
-    let y = event.clientY - btn.offsetTop - size / 2;
-    circle.style.width = circle.style.height = `${size}px`;
-    circle.style.left = `${x}px`;
-    circle.style.top = `${y}px`;
-    btn.appendChild(circle);
-    setTimeout(() => circle.remove(), 600);
-}
-
-window.myCDN.addRippleEffect = addRippleEffect;
-
-
 // Export Functions
 window.myCDN = { toggleDarkMode, showToast, copyToClipboard, randomBackground, scrollToTop, showLoader };
 
