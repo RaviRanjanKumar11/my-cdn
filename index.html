@@ -7,24 +7,49 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Welcome to My Custom CDN</h1>
+    <h1>🚀 Welcome to My Custom CDN</h1>
+    <p>This is a demo of the available functions. You can use them in your project by including the CDN links.</p>
+
+    <h2>📌 Features</h2>
     <button onclick="myCDN.toggleDarkMode()">Toggle Dark Mode</button>
     <button onclick="myCDN.showToast('Hello from CDN!', 'success')">Show Toast</button>
     <button onclick="myCDN.copyToClipboard('Hello, World!')">Copy Text</button>
-<button onclick="myCDN.randomBackground()">Change Background</button>
-<button onclick="myCDN.scrollToTop()">Scroll to Top</button>
-<button onclick="myCDN.showLoader()">Show Loader</button>
+    <button onclick="myCDN.randomBackground()">Change Background</button>
+    <button onclick="myCDN.scrollToTop()">Scroll to Top</button>
+    <button onclick="myCDN.showLoader()">Show Loader</button>
 
-<h1 id="animatedText"></h1>
-<button onclick="myCDNAnimations.typeText(document.getElementById('animatedText'), 'Hello from Ravi CDN!')">
-    Start Typing Effect
-</button>
-<p id="fadeInPara" style="opacity: 0;">Ravi Ranjan Kumar</p>
-<button onclick="myCDNAnimations.fadeInElement(document.getElementById('fadeInPara'))">
-    Show Fade-In Effect
-</button>
+    <h1 id="animatedText"></h1>
+    <button onclick="myCDNAnimations.typeText(document.getElementById('animatedText'), 'Hello from My CDN!')">
+        Start Typing Effect
+    </button>
 
+    <p id="fadeInPara" style="opacity: 0;">This text will fade in</p>
+    <button onclick="myCDNAnimations.fadeInElement(document.getElementById('fadeInPara'))">
+        Show Fade-In Effect
+    </button>
 
+    <hr>
+    <h2>📖 How to Use This CDN?</h2>
+    <p>Add the following links in your HTML file to use this CDN:</p>
+
+    <h3>➡ Include CSS</h3>
+    <pre><code>&lt;link rel="stylesheet" href="https://my-cdn-bay.vercel.app/css/styles.css"&gt;</code></pre>
+
+    <h3>➡ Include JavaScript</h3>
+    <pre><code>&lt;script src="https://my-cdn-bay.vercel.app/js/utils.js"&gt;&lt;/script&gt;
+&lt;script src="https://my-cdn-bay.vercel.app/js/animations.js"&gt;&lt;/script&gt;</code></pre>
+
+    <h2>⚡ Example Usage</h2>
+    <pre><code>
+&lt;button onclick="myCDN.toggleDarkMode()"&gt;Toggle Dark Mode&lt;/button&gt;
+&lt;button onclick="myCDN.showToast('Hello!', 'success')"&gt;Show Toast&lt;/button&gt;
+    </code></pre>
+
+    <p>For more features, explore the JavaScript files.</p>
+
+    <footer>
+        <p>🚀 Created by <strong>My-CDN</strong></p>
+    </footer>
 
     <script src="js/utils.js"></script>
     <script src="js/animations.js"></script>
