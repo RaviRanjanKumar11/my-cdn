@@ -59,8 +59,6 @@ function addRippleEffect(event) {
     setTimeout(() => circle.remove(), 600);
 }
 
-
-
 window.myCDN.addRippleEffect = addRippleEffect;
 
 
